@@ -126,16 +126,7 @@ body {
     color: #b42318;
 }
 
-@media (max-width: 768px) {
-    .auth-left {
-        padding: 35px 25px;
-    }
 
-    .auth-right,
-    .register-card {
-        padding: 25px;
-    }
-    
 /* =================================
    MOBILE RESPONSIVE DESIGN
 ================================= */
@@ -214,6 +205,22 @@ img {
 }
 
 @media screen and (max-width: 480px) {
+
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .btn {
+        font-size: 13px;
+    }
+}
+
 
     .container,
     .container-fluid {
