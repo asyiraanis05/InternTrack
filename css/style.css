@@ -145,10 +145,18 @@ img {
     height: auto;
 }
 
-@media screen and (max-width: 768px) {
 
-    body {
-        font-size: 14px;
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
     .container,
@@ -159,22 +167,9 @@ img {
         padding-right: 15px;
     }
 
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .card {
-        margin-bottom: 15px;
-    }
-
     .table-responsive {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-    }
-
-    table {
-        min-width: 600px;
     }
 
     input,
@@ -183,14 +178,14 @@ img {
         max-width: 100%;
     }
 
-    button {
+    button,
+    .btn {
         max-width: 100%;
+        touch-action: manipulation;
     }
+}
 
-    .sidebar {
-        width: 100%;
-    }
-
+@media (max-width: 480px) {
     h1 {
         font-size: 24px;
     }
@@ -199,12 +194,13 @@ img {
         font-size: 21px;
     }
 
-    h3 {
-        font-size: 18px;
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
-
-@media screen and (max-width: 480px) {
+ {
 
     .container,
     .container-fluid {
