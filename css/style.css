@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -126,12 +125,11 @@ body {
     color: #b42318;
 }
 
-
 /* ========================================
    RESPONSIVE MOBILE DESIGN
 ======================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 991.98px) {
 
     body {
         overflow-x: hidden;
@@ -154,55 +152,71 @@ body {
         width: 100%;
     }
 
-   
-/* NAVIGATION BAR */
+    /* NAVIGATION BAR */
 
-.app-nav {
-    padding: 12px 15px;
-}
+    .app-nav {
+        padding: 12px 15px;
+        position: relative;
+        z-index: 1050;
+    }
 
-.app-nav .container {
-    flex-wrap: wrap;
-}
+    .app-nav .container {
+        flex-wrap: wrap;
+        position: relative;
+    }
 
-.app-nav .navbar-brand {
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-    white-space: normal;
-    max-width: calc(100% - 65px);
-}
+    .app-nav .navbar-brand {
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        white-space: normal;
+        max-width: calc(100% - 65px);
+    }
 
-.app-nav .navbar-toggler {
-    display: block;
-    border: 1px solid rgba(255,255,255,0.7);
-    padding: 8px 10px;
-    flex-shrink: 0;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
-}
+    .app-nav .navbar-toggler {
+        border: 1px solid rgba(255,255,255,0.7);
+        padding: 8px 10px;
+        flex-shrink: 0;
+        cursor: pointer;
+        position: relative;
+        z-index: 1060;
+        pointer-events: auto;
+        touch-action: manipulation;
+    }
 
-.app-nav .navbar-toggler:focus {
-    box-shadow: none;
-}
+    .app-nav .navbar-toggler:focus {
+        box-shadow: none;
+    }
 
-.app-nav .navbar-collapse {
-    flex-basis: 100%;
-    width: 100%;
-    padding-top: 12px;
-}
+    .app-nav .navbar-collapse {
+        flex-basis: 100%;
+        width: 100%;
+        padding-top: 12px;
+        position: relative;
+        z-index: 1050;
+        background: #172554;
+    }
 
-.app-nav .navbar-nav {
-    width: 100%;
-    gap: 5px;
-}
+    .app-nav .navbar-nav {
+        width: 100%;
+        gap: 5px;
+        pointer-events: auto;
+        touch-action: manipulation;
+    }
 
-.app-nav .navbar-nav .nav-link {
-    display: block;
-    width: 100%;
-    padding: 12px 10px;
-}
+    .app-nav .navbar-nav .nav-link {
+        display: block;
+        width: 100%;
+        padding: 12px 10px;
+        pointer-events: auto;
+        touch-action: manipulation;
+    }
+
+    .app-nav .navbar-nav button {
+        pointer-events: auto;
+        touch-action: manipulation;
+        margin-top: 6px;
+    }
 
     /* DASHBOARD */
 
@@ -266,6 +280,11 @@ body {
     .stat-card {
         padding: 13px;
     }
+
+    .app-nav .navbar-brand {
+        font-size: 15px;
+    }
+}
 
     .app-nav .navbar-brand {
         font-size: 15px;
